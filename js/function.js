@@ -1,7 +1,3 @@
-/**
- * Created by asagi on 15/08/19.
- */
-
 function InitializeLocalStorage(){
     chrome.runtime.sendMessage({method: "ReadSavedUrlAll"}, function(response) {
         var data = JSON.parse(response.data);

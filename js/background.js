@@ -1,7 +1,3 @@
-/**
- * Created by asagi on 15/08/20.
- */
-
 var ccm = chrome.contextMenus;
 
 ccm.create({
