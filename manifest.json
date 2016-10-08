@@ -1,0 +1,23 @@
+{
+  "name":"STOCK",
+  "version":"1.2.0",
+  "manifest_version":2,
+  "description":"TWEETのURLをDO SAVE",
+  "background":{
+    "scripts":["js/background.js"]
+  },
+  "content_scripts":[
+    {
+      "matches":["https://twitter.com/*","http://togetter.com/*","https://tweetdeck.twitter.com/*"],
+      "css": ["css/css.css"],
+      "js":["lib/jquery-2.1.4.min.js","js/function.js","js/script.js"],
+      "run_at":"document_start"
+    }
+  ],
+  "permissions": [
+    "storage","contextMenus","activeTab"
+  ],
+  "icons" : {
+    "128": "icon/icon.png"
+  }
+}

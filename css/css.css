@@ -1,0 +1,53 @@
+body.noscroll {
+    overflow: hidden;
+}
+.action-Heart:hover{
+    color:gray;
+}
+.icon-saved{
+    color: red;
+}
+.icon-save:before{
+    content: "\f026";
+}
+.icon-saveurl{
+    font-size: 10pt;
+}
+.clicked i{
+    color:red;!important;
+}
+.clicked span{
+    color:red;!important;
+}
+
+div.urls{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10000;
+}
+
+div.urls div{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.urls input{
+    width: 120px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+}
